@@ -684,6 +684,21 @@ a {
   text-decoration: none;
 }
 
+/* <!-- Feedback --> */
+
+.feedback {
+  margin-left: 93px;
+}
+
+.subscribe {
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-style: normal;
+}
+
+/* backdrop */
+
 .backdrop {
   position: fixed;
   top: 0;
