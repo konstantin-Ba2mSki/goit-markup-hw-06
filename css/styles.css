@@ -744,7 +744,8 @@ a {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  margin-left: 60px;
+  margin: 0%;
+  margin-left: 10px;
 }
 
 .write {
