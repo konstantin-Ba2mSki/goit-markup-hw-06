@@ -666,23 +666,24 @@ p.label {
 
 .product-text {
   position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  padding: 60px 24px;
   font-size: 18px;
   line-height: 1.55;
   color: #ffffff;
-  display: flex;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 322px;
-  height: 168px;
-
   opacity: 0;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery-item:hover .product-thumb::before {
+.foto-link:hover .product-text,
+.foto-link:focus .product-text,
+.foto-link:focus .product-thumb::before {
   transform: translateY(0);
+  opacity: 1;
+  background: rgba(33, 150, 243, 1);
 }
 
 a {
@@ -795,6 +796,7 @@ a {
 }
 
 .close-icon {
+  display: flex;
   position: absolute;
   top: 8px;
   right: 8px;
