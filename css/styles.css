@@ -524,27 +524,6 @@ p.label {
   fill: #ffffff;
 }
 
-/* modal */
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.close-icon {
-  width: 30px;
-  height: 30px;
-}
-
-.close-window:hover,
-.close-window:focus {
-  fill: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /* Portfolio */
 
 /* filter */
@@ -718,6 +697,10 @@ a {
   border-radius: 4px;
 }
 
+.footer-form {
+  display: flex;
+}
+
 .button {
   width: 200px;
   height: 50px;
@@ -740,20 +723,8 @@ a {
   background-color: #188ce8;
 }
 
-.button.button-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .logo-icon {
   margin-left: 10px;
-}
-
-.write {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* backdrop */
@@ -801,11 +772,19 @@ a {
   position: absolute;
   top: 8px;
   right: 8px;
+  width: 30px;
+  height: 30px;
   padding: 6px;
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-window:hover,
+.close-window:focus {
+  fill: var(--accent-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
